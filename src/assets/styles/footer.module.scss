@@ -1,0 +1,14 @@
+@import './theme.scss';
+
+.footer{
+
+    text-align: center;
+    color:white;
+    background-color: $theme-background;
+    margin-top:$margin;
+    padding: $padding;
+    height: 50px;
+    a{
+        color:$theme-color;
+    }
+}

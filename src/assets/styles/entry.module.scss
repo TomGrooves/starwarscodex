@@ -1,0 +1,96 @@
+@import './theme.scss';
+
+.people{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: left;
+
+    li{
+        list-style-type: none;
+        p{
+            color:$theme-color;
+            display: inline-block;
+        }
+    }
+}
+
+.planets{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: left;
+
+    li{
+        list-style-type: none;
+        p{
+            color:$theme-color;
+            display: inline-block;
+        }
+    }
+}
+
+.films{
+   ul{
+    display:grid;
+    grid-template-columns: repeat(4, auto);
+    text-align: left;
+
+    li{
+        list-style-type: none;
+        p{
+            color:$theme-color;
+            display: inline-block;
+        }
+    }
+    }
+
+  
+        span{
+            text-align: center;
+            p{
+                color:$theme-color;
+            }
+        }
+    
+}
+
+.species{
+    display:grid;
+    grid-template-columns: repeat(4, auto);
+    text-align: left;
+
+    li{
+        list-style-type: none;
+        p{
+            color:$theme-color;
+            display: inline-block;
+        }
+    }
+}
+
+.vehicles{
+    display:grid;
+    grid-template-columns: repeat(4, auto);
+    text-align: left;
+
+    li{
+        list-style-type: none;
+        p{
+            color:$theme-color;
+            display: inline-block;
+        }
+    }
+}
+
+.starships{
+    display:grid;
+    grid-template-columns: repeat(4, auto);
+    text-align: left;
+
+    li{
+        list-style-type: none;
+        p{
+            color:$theme-color;
+            display: inline-block;
+        }
+    }
+}

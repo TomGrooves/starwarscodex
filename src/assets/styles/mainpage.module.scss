@@ -1,0 +1,14 @@
+@import './theme.scss';
+
+.mainpage{
+    padding-top:20px;
+    background-color: $theme-background;
+    min-height: calc(75vh - 60px);
+
+    h2{
+        color:white;
+        font-size: $font-size-l;
+        text-align: center;
+        margin-top:5%;
+    }
+}

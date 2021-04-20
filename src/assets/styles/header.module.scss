@@ -1,0 +1,24 @@
+@import './theme.scss';
+
+@font-face {
+    font-family: 'StarJedi';
+    src: url('../fonts/star_jedi/starjedi/Starjhol.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.header{
+    height: 30vh;
+    background-image: url('../photos/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+
+    h1{
+        font-size: $font-size-l;
+        color: $theme-color;
+        margin:0;
+        padding:0;
+        line-height: 30vh;
+        text-align: center;
+        font-family: 'StarJedi', 'sans-serif'
+    }
+}

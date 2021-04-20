@@ -1,0 +1,48 @@
+@import './theme.scss';
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+.search{
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    padding-right: 32px;
+    input{
+        width: 160px;
+        height: 22px;
+        background-color: $theme-background;
+        color:$theme-color;
+        border:none;
+        font-size: $font-size-s;
+        border-bottom: solid 2px $theme-color;
+        font-family: 'Pathway Gothic One', sans-serif;
+
+    }
+
+    input::placeholder{
+        color:$theme-color;
+        font-family: 'Pathway Gothic One', sans-serif;
+    }
+
+    input:active{
+        outline: none;
+    }
+    input:focus{
+        border-color: white;
+        outline: none;
+    }
+
+    button{
+        margin-left:8px;
+        background-color:rgba(0,0,0,0);
+        color:black;
+        outline: none;
+        border:none;
+        font-size: $font-size-m;
+        line-height: 2px;
+        color: $theme-color;
+    }
+
+    button:active{
+        color:white;
+
+    }
+}

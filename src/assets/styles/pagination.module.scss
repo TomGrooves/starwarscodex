@@ -1,0 +1,26 @@
+@import './theme.scss';
+
+.pagination{
+    width:fit-content;
+    margin:auto;
+    margin-top:5%;
+    border: solid 2px $theme-color;
+    
+    button{
+        cursor: pointer;
+        background-color: $theme-background;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        border:none;
+        color:white;
+        font-size: $font-size-s;
+    }
+    button:active{
+        outline:none;
+    }
+    button:focus{
+        outline:none;
+        
+    }
+}
