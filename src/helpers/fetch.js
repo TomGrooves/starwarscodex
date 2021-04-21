@@ -1,5 +1,4 @@
-// Både GET og POST i en funktion med variabler
-
+// Fetch helper function with default GET method
 export async function doFetch(url, type, data) {
 
     let method = type || 'GET'

@@ -4,18 +4,17 @@ import {AppContext} from '../context/ContextProvider';
 
 function Accordion(props) {
 
-    
-    /** Accordian accepts these props
-     *    * title (deafult "Accordian")
-     *    * child (required for content)
-     */
-    
+    // Import needed states from AppContext
     const { page, category } = useContext(AppContext)
+
+    // Set states used by component
     const [active, setActive] = useState(false)    
     
+    // Prop destructuring with defaults if no props are provided
     const child = props.child || "No child content selected"
     const title = props.title || "Accordian"
 
+    // useEffect to reset active accordion if page or category changes
     useEffect(() => {
         setActive(false)
     },[page, category])

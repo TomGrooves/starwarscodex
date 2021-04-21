@@ -3,6 +3,7 @@ import Style from '../assets/styles/footer.module.scss'
 
 export function FooterComponent(){
 
+    // Footer component with names
     return(
         <footer className={Style.footer}>
             <p>Photo by 

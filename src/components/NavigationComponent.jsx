@@ -5,11 +5,16 @@ import Style from '../assets/styles/navigation.module.scss'
 
 export function NavigationComponent () {
 
+    // Import states from AppContext 
     const {setCategory, category, setPage, setSearchResult} = useContext(AppContext)
+    
+    // State used to check if user scrolled past navbar
     let [stickyActive, setStickyActive] = useState(false)
    
+    // Ref for navbar used to get offSetTop
     const navRef = useRef()
     
+    // useEffect hook to set offsetTop once DOM has loaded and add eventlistener for scroll changes
     useEffect(()=>{
         
         const offSet = navRef.current ? navRef.current.offsetTop : null
@@ -28,6 +33,7 @@ export function NavigationComponent () {
         });
     }, [])
 
+    // Handler function to change category, reset page number and searchresult
     function navHandler(category) {
         setCategory(category); 
         setPage(1); 
@@ -35,7 +41,7 @@ export function NavigationComponent () {
         window.scrollTo(0,0)
     }
 
-
+    // HTML for navbar with inline style for changing currently active navlink
     return (
         <nav ref={navRef} className={stickyActive ? `${Style.navigation} ${Style.fixed}` : Style.navigation}>
             <ul>

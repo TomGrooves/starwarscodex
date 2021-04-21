@@ -2,12 +2,14 @@ import React, { createContext, useState } from "react";
 
 const AppContext = createContext();
 
+// Create context for global variables and states
 const AppContextProvider = ({ children }) => {
 
   let [page, setPage] = useState(1)
   let [category, setCategory] = useState('people')
   let [searchResult, setSearchResult] = useState([])
   
+  // Return AppContext.provider with said states
   return (
     <AppContext.Provider value={{ 
       page,
@@ -21,9 +23,5 @@ const AppContextProvider = ({ children }) => {
     </AppContext.Provider>
   );
 };
-
-// Først: import {AppContextProvider} from './context/ContextProvider'; i Top hierakiet (App.js)
-// Herefter: import { AppContext } from "../../context/ContextProvider" indeni det component som skal subsribe 
-// og deklarer værdierne med : const { testState, setTestState } = useContext(AppContext);
 
 export { AppContext, AppContextProvider }

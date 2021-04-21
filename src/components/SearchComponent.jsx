@@ -5,13 +5,22 @@ import Style from '../assets/styles/search.module.scss'
 import {FiArrowRightCircle} from 'react-icons/fi'
 
 export function SearchComponent() {
+
+  // Import global states from AppContext
   const { setSearchResult} = useContext(AppContext);
+
   // fetch everything and store it in an array
   // take input from user and loop through array looking for matches
 
+  // local states needed by component
   let [searchParam, setSearchParam] = useState("");
   let [allData, setAllData] = useState([]);
 
+  // function to fetch all data from API
+  // First gets all category keys and fetches each category from API
+  // Then pushes all results from each category page number into innerData array
+  // Then pushes all these resulst from each innerData.results array into data array
+  // Finally flattens data array to create one big list of all entries in the API to search through
   async function getAllData() {
     let data = [];
     let innerData = [];
@@ -41,6 +50,11 @@ export function SearchComponent() {
     setAllData(merged);
   }
 
+  // Search function to loop through allData and return results
+  // Checks if searchParam is not empty, then loops through all entries in AllData
+  // then checks each value in key, value pair of each entry for a match with searchParam
+  // if the entry does not allready exist, pushes it to results array
+  // otherwise sets searchResult to "no result found"
   function search() {
     setSearchResult([])
     
@@ -66,6 +80,7 @@ export function SearchComponent() {
     }
   }
 
+  // useEffect to run allData once component mounts
   useEffect(() => {
     if (allData.length === 0) {
       getAllData();

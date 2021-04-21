@@ -4,9 +4,10 @@ import Style from '../assets/styles/entry.module.scss'
 
 export function EntryComponent(props) {
 
+    // States needed by component
     let [entryCategory, setEntryCategory] = useState("people")
 
-
+    // useEffect hook to assign props to specific category
     useEffect(() => {
         function checkEntryCategory() {
             if (props.data.birth_year){
@@ -37,7 +38,7 @@ export function EntryComponent(props) {
         checkEntryCategory()
     }, [props])
 
-
+    // Create accordion for people category
     const people = 
         <Accordion title={props.data.name} child={
             <ul className={Style.people}>
@@ -51,6 +52,7 @@ export function EntryComponent(props) {
             }>
         </Accordion>
 
+    // Create accordion for planet category
     const planets = 
         <Accordion title={props.data.name} child={
             <ul className={Style.planets}>
@@ -67,6 +69,7 @@ export function EntryComponent(props) {
             }>
         </Accordion>
     
+    // Create accordion for films category
     const films =
         <Accordion title={props.data.title} child={
             <div className={Style.films}>
@@ -81,6 +84,7 @@ export function EntryComponent(props) {
             }>
         </Accordion>
 
+    // Create accordion for species category
     const species = 
         <Accordion title={props.data.name} child={
             <ul className={Style.species}>
@@ -96,6 +100,7 @@ export function EntryComponent(props) {
             }>
         </Accordion>
 
+    // Create accordion for vehicles category
     const vehicles = 
         <Accordion title={props.data.name} child={
             <ul className={Style.vehicles}>
@@ -113,6 +118,7 @@ export function EntryComponent(props) {
             }>
         </Accordion>
 
+    // Create accordion for starships category
     const starships = 
         <Accordion title={props.data.name} child={
             <ul className={Style.starships}>
@@ -132,7 +138,7 @@ export function EntryComponent(props) {
         }>
         </Accordion>
        
-
+        // Switch to determine which category to return
         switch (entryCategory) {    
             case "people":
                 return people
