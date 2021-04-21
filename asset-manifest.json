@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/starwarscodex/static/css/main.c86692e5.chunk.css",
+    "main.css": "/starwarscodex/static/css/main.25f3d8ca.chunk.css",
     "main.js": "/starwarscodex/static/js/main.dd2e6c23.chunk.js",
     "main.js.map": "/starwarscodex/static/js/main.dd2e6c23.chunk.js.map",
     "runtime-main.js": "/starwarscodex/static/js/runtime-main.ae795f59.js",
@@ -10,14 +10,14 @@
     "static/js/3.1cbac473.chunk.js": "/starwarscodex/static/js/3.1cbac473.chunk.js",
     "static/js/3.1cbac473.chunk.js.map": "/starwarscodex/static/js/3.1cbac473.chunk.js.map",
     "index.html": "/starwarscodex/index.html",
-    "static/css/main.c86692e5.chunk.css.map": "/starwarscodex/static/css/main.c86692e5.chunk.css.map",
+    "static/css/main.25f3d8ca.chunk.css.map": "/starwarscodex/static/css/main.25f3d8ca.chunk.css.map",
     "static/js/2.ce2ff10a.chunk.js.LICENSE.txt": "/starwarscodex/static/js/2.ce2ff10a.chunk.js.LICENSE.txt",
-    "static/media/header.module.scss": "/starwarscodex/static/media/jeremy-perkins-uhjiu8FjnsQ-unsplash.c81ebe93.jpg"
+    "static/media/header.module.scss": "/starwarscodex/static/media/jeremy-perkins-uhjiu8FjnsQ-unsplash.48d3fb25.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ae795f59.js",
     "static/js/2.ce2ff10a.chunk.js",
-    "static/css/main.c86692e5.chunk.css",
+    "static/css/main.25f3d8ca.chunk.css",
     "static/js/main.dd2e6c23.chunk.js"
   ]
 }
