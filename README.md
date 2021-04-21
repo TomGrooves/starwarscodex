@@ -19,6 +19,6 @@ Star Wars Codex can also be viewed online here: https://tomgrooves.github.io/sta
 
 ### How to run it:
 
-Download the project, unzip it and run it in console with command: `npm start`
+Download the project, unzip it, navigate to the project folder and run it in console with command: `npm install` followed by `npm start`
 Note: Requires Node.js installed.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
